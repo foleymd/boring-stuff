@@ -1,0 +1,352 @@
+1602035331375	geckodriver	INFO	Listening on 127.0.0.1:54252
+1602035332391	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileT09qYe"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602035334454	Marionette	INFO	Listening on port 54260
+1602035334550	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602035797921	geckodriver	INFO	Listening on 127.0.0.1:54437
+1602035798933	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileJGk4Vs"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602035801158	Marionette	INFO	Listening on port 54444
+1602035801205	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602035889095	Marionette	INFO	Stopped listening on port 54444
+1602035889603	Marionette	INFO	Stopped listening on port 54260
+1602035953512	geckodriver	INFO	Listening on 127.0.0.1:54570
+1602035954518	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileVP5k71"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602035956473	Marionette	INFO	Listening on port 54577
+1602035956576	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602036112801	geckodriver	INFO	Listening on 127.0.0.1:54649
+1602036113813	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileSt8pvo"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036115733	Marionette	INFO	Listening on port 54656
+1602036115791	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602036191845	geckodriver	INFO	Listening on 127.0.0.1:54758
+1602036192857	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilecGomw9"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036194713	Marionette	INFO	Listening on port 54766
+1602036194727	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602036238561	geckodriver	INFO	Listening on 127.0.0.1:54818
+1602036239576	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilemLL1Tl"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036241580	Marionette	INFO	Listening on port 54826
+1602036241612	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602036360300	Marionette	INFO	Stopped listening on port 54577
+1602036361312	Marionette	INFO	Stopped listening on port 54826
+1602036364147	Marionette	INFO	Stopped listening on port 54656
+1602036364902	Marionette	INFO	Stopped listening on port 54766
+1602036482135	geckodriver	INFO	Listening on 127.0.0.1:55142
+1602036483148	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileAxxc4i"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036485179	Marionette	INFO	Listening on port 55154
+1602036485210	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602036622071	geckodriver	INFO	Listening on 127.0.0.1:55799
+1602036623079	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileWkYaZM"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036625042	Marionette	INFO	Listening on port 55815
+1602036625144	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602036664922	geckodriver	INFO	Listening on 127.0.0.1:56088
+1602036665934	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilem0gChf"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036667907	Marionette	INFO	Listening on port 56100
+1602036667999	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602036707195	geckodriver	INFO	Listening on 127.0.0.1:56335
+1602036708205	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileJds0i9"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036710060	Marionette	INFO	Listening on port 56347
+1602036710159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602036728481	geckodriver	INFO	Listening on 127.0.0.1:56487
+1602036729494	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileORPghU"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036731553	Marionette	INFO	Listening on port 56498
+1602036731655	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602036737473	Marionette	INFO	Stopped listening on port 56498
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1031: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileAxxc4i/protections.sqlite
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0xD,name=PAPZ::Msg_Destroy) Channel error: cannot send/recv
+
+1602036742313	Marionette	INFO	Stopped listening on port 55154
+1602036743400	Marionette	INFO	Stopped listening on port 55815
+1602036744420	Marionette	INFO	Stopped listening on port 56100
+1602036745619	Marionette	INFO	Stopped listening on port 56347
+1602036939528	geckodriver	INFO	Listening on 127.0.0.1:57439
+1602036940539	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofile0XXl1n"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036942513	Marionette	INFO	Listening on port 57450
+1602036942594	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602036986527	geckodriver	INFO	Listening on 127.0.0.1:57699
+1602036987537	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileZ5ewvD"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602036989423	Marionette	INFO	Listening on port 57710
+1602036989501	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602037018465	geckodriver	INFO	Listening on 127.0.0.1:57899
+1602037019476	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilexMepvA"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602037021334	Marionette	INFO	Listening on port 57910
+1602037021429	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602037045302	geckodriver	INFO	Listening on 127.0.0.1:58075
+1602037046313	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilewrWrBf"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602037048249	Marionette	INFO	Listening on port 58086
+1602037048276	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602037061913	geckodriver	INFO	Listening on 127.0.0.1:58202
+1602037062927	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileXzQLfE"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602037064971	Marionette	INFO	Listening on port 58213
+1602037064990	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602037233440	Marionette	INFO	Stopped listening on port 57910
+1602037235736	Marionette	INFO	Stopped listening on port 58086
+1602037243557	Marionette	INFO	Stopped listening on port 57450
+1602037245491	Marionette	INFO	Stopped listening on port 57710
+1602037617470	geckodriver	INFO	Listening on 127.0.0.1:59979
+1602037618483	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilehDLKb8"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602037620690	Marionette	INFO	Listening on port 59990
+1602037620757	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602037669959	geckodriver	INFO	Listening on 127.0.0.1:60283
+1602037670968	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileFdveGW"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602037672870	Marionette	INFO	Listening on port 60294
+1602037672948	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602037690351	geckodriver	INFO	Listening on 127.0.0.1:60458
+1602037691364	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileAXS1Bi"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602037693268	Marionette	INFO	Listening on port 60469
+1602037693326	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602037730322	Marionette	INFO	Stopped listening on port 60294
+1602037732962	Marionette	INFO	Stopped listening on port 59990
+1602037736322	Marionette	INFO	Stopped listening on port 60469
+1602037828694	geckodriver	INFO	Listening on 127.0.0.1:61131
+1602037829707	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileNUv4LH"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602037831725	Marionette	INFO	Listening on port 61142
+1602037831784	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602037836137	Marionette	INFO	Stopped listening on port 61142
+1602038005237	geckodriver	INFO	Listening on 127.0.0.1:61969
+1602038006249	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileqdjFlD"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038008163	Marionette	INFO	Listening on port 61981
+1602038008214	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038012679	Marionette	INFO	Stopped listening on port 61981
+1602038013262	geckodriver	INFO	Listening on 127.0.0.1:62094
+1602038014267	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilerVY6Rv"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038016151	Marionette	INFO	Listening on port 62105
+1602038016232	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038061488	geckodriver	INFO	Listening on 127.0.0.1:62354
+1602038062501	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofile0PizQw"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038064339	Marionette	INFO	Listening on port 62365
+1602038064375	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038064425	geckodriver	INFO	Listening on 127.0.0.1:62405
+1602038065433	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofile6j9Cl6"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038067377	Marionette	INFO	Listening on port 62427
+1602038067403	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038105795	geckodriver	INFO	Listening on 127.0.0.1:62644
+1602038106811	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofiletWbWkw"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038108840	Marionette	INFO	Listening on port 62659
+1602038108892	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038108942	geckodriver	INFO	Listening on 127.0.0.1:62704
+1602038109945	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofile0BUV2O"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 3771: TypeError: win is null
+1602038112082	Marionette	INFO	Listening on port 62725
+1602038112117	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038116766	Marionette	INFO	Stopped listening on port 62725
+1602038121184	Marionette	INFO	Stopped listening on port 62659
+1602038122689	Marionette	INFO	Stopped listening on port 62365
+1602038124082	Marionette	INFO	Stopped listening on port 62427
+1602038125346	Marionette	INFO	Stopped listening on port 62105
+1602038126815	Marionette	INFO	Stopped listening on port 58213
+1602038130153	geckodriver	INFO	Listening on 127.0.0.1:62854
+1602038131166	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileugSKBU"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038132967	Marionette	INFO	Listening on port 62865
+1602038133034	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038133081	geckodriver	INFO	Listening on 127.0.0.1:62908
+1602038134089	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilel05hgb"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038136004	Marionette	INFO	Listening on port 62930
+1602038136059	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038211095	geckodriver	INFO	Listening on 127.0.0.1:63305
+1602038212107	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileTsq4ue"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038214249	Marionette	INFO	Listening on port 63316
+1602038214283	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038214337	geckodriver	INFO	Listening on 127.0.0.1:63364
+1602038215343	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofile2no9hR"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038217339	Marionette	INFO	Listening on port 63385
+1602038217413	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038218532	Marionette	INFO	Stopped listening on port 63385
+1602038358736	geckodriver	INFO	Listening on 127.0.0.1:64047
+1602038359743	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilefR41wl"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038361678	Marionette	INFO	Listening on port 64058
+1602038361707	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038362531	Marionette	INFO	Stopped listening on port 64058
+1602038399960	geckodriver	INFO	Listening on 127.0.0.1:64284
+1602038400974	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofilen4NX82"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038402777	Marionette	INFO	Listening on port 64296
+1602038402830	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038415387	geckodriver	INFO	Listening on 127.0.0.1:64419
+1602038416401	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileX1kAIh"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038418334	Marionette	INFO	Listening on port 64430
+1602038418363	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038420155	Marionette	INFO	Stopped listening on port 64430
+1602038426761	Marionette	INFO	Stopped listening on port 62930
+1602038428423	Marionette	INFO	Stopped listening on port 63316
+1602038429531	Marionette	INFO	Stopped listening on port 64296
+1602038431062	Marionette	INFO	Stopped listening on port 62865
+1602038445976	geckodriver	INFO	Listening on 127.0.0.1:64617
+1602038446991	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofile8YcCdo"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038448880	Marionette	INFO	Listening on port 64628
+1602038448956	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038451648	Marionette	INFO	Stopped listening on port 64628
+1602038492628	geckodriver	INFO	Listening on 127.0.0.1:64887
+1602038493638	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileDEXdCn"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038495636	Marionette	INFO	Listening on port 64898
+1602038495689	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038508773	geckodriver	INFO	Listening on 127.0.0.1:65060
+1602038509786	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileAaOJ5P"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038511685	Marionette	INFO	Listening on port 65071
+1602038511742	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038515847	Marionette	INFO	Stopped listening on port 65071
+1602038530680	geckodriver	INFO	Listening on 127.0.0.1:65244
+1602038531691	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileZlOcVh"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038533612	Marionette	INFO	Listening on port 65255
+1602038533642	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038537409	Marionette	INFO	Stopped listening on port 65255
+1602038537828	geckodriver	INFO	Listening on 127.0.0.1:65365
+1602038538836	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileNzZkNv"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038540768	Marionette	INFO	Listening on port 65376
+1602038540797	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038541866	Marionette	INFO	Stopped listening on port 65376
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1602038554663	geckodriver	INFO	Listening on 127.0.0.1:65495
+1602038555676	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileR0zYUp"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038557589	Marionette	INFO	Listening on port 65508
+1602038557633	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038560119	Marionette	INFO	Stopped listening on port 65508
+1602038560536	geckodriver	INFO	Listening on 127.0.0.1:49211
+1602038561547	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileB0Rnqw"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038563464	Marionette	INFO	Listening on port 49224
+1602038563500	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038566792	Marionette	INFO	Stopped listening on port 49224
+1602038567235	geckodriver	INFO	Listening on 127.0.0.1:49333
+1602038568246	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileNWn17m"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038570063	Marionette	INFO	Listening on port 49344
+1602038570096	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038571085	Marionette	INFO	Stopped listening on port 49344
+1602038742559	geckodriver	INFO	Listening on 127.0.0.1:50111
+1602038743571	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileWxz4ht"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038745442	Marionette	INFO	Listening on port 50127
+1602038745518	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038747836	Marionette	INFO	Stopped listening on port 50127
+1602038748252	geckodriver	INFO	Listening on 127.0.0.1:50209
+1602038749260	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofile2wRq6Y"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038751191	Marionette	INFO	Listening on port 50220
+1602038751206	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1602038756308	Marionette	INFO	Stopped listening on port 50220
+1602038756778	geckodriver	INFO	Listening on 127.0.0.1:50334
+1602038757787	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7y/wcd7wqz14k3_20bmpk934bzwzvjjmz/T/rust_mozprofileTcDVQl"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1602038759576	Marionette	INFO	Listening on port 50345
+1602038759625	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602038760700	Marionette	INFO	Stopped listening on port 50345
+1602109282132	Marionette	INFO	Stopped listening on port 64898

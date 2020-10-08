@@ -1,0 +1,11 @@
+2020-10-05 19:15:56,303 - DEBUG - Start of program.
+2020-10-05 19:15:56,303 - DEBUG - Start of factorial(7)
+2020-10-05 19:15:56,303 - DEBUG - i is 1, total is 1
+2020-10-05 19:15:56,303 - DEBUG - i is 2, total is 2
+2020-10-05 19:15:56,303 - DEBUG - i is 3, total is 6
+2020-10-05 19:15:56,303 - DEBUG - i is 4, total is 24
+2020-10-05 19:15:56,303 - DEBUG - i is 5, total is 120
+2020-10-05 19:15:56,303 - DEBUG - i is 6, total is 720
+2020-10-05 19:15:56,303 - DEBUG - i is 7, total is 5040
+2020-10-05 19:15:56,303 - DEBUG - Return value is 5040
+2020-10-05 19:15:56,359 - DEBUG - End of program.

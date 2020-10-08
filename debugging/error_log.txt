@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 29, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 29, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 30, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 31, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
+Traceback (most recent call last):
+  File "/Users/mdf594/Desktop/automate/raise_assert.py", line 32, in <module>
+    raise Exception('This is the error message.')
+Exception: This is the error message.
