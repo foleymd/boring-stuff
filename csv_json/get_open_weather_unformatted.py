@@ -1,4 +1,4 @@
-''' getting weather from openweathermap.org based on command line args and prints formatted data
+''' getting weather from openweathermap.org based on command line args
     it takes up to a couple hours for the API key to become active
     free accounts are limited to a small number of APIs: https://openweathermap.org/price
     api docs at https://openweathermap.org/api
@@ -34,48 +34,13 @@ def degrees_to_cardinal(degrees):
     ix = int((degrees + 11.25)/22.5 - 0.02)
     return directions[ix % 16]
 
-#standardized temperature output
-def format_temp(temp):
-    temp = str(round(temp, 1)) + u"\N{DEGREE SIGN}" + 'F'
-    return temp
-
 # formats both daily and current weather data
 def format_weather_data(weather, timeframe):
     
-    # formatting strings for human readability
     if timeframe == "current":
-        weather["dt"] = datetime.fromtimestamp(weather["dt"]).strftime('%m/%d/%Y %I:%M %p')
-        weather["temp"] = format_temp(weather["temp"])
-        weather["feels_like"] = format_temp(weather["feels_like"])
-        visibility_miles = weather["visibility"] / 1609.34 #convert to feet/miles
-        weather["visibility"] = str(round(visibility_miles, 1)) + ' miles'
-       
-    elif timeframe == "day":
-        weather["dt"] = datetime.fromtimestamp(weather["dt"]).strftime('%m/%d/%Y')
-        for time, temp in weather["temp"].items():
-            weather["temp"][time] = format_temp(weather["temp"][time])
-        for time, temp in weather["feels_like"].items():
-            weather["feels_like"][time] = format_temp(weather["feels_like"][time])
-        weather["pop"] = str("{:.0%}".format(weather["pop"]))
+        weather["visibility"] = weather["visibility"] / 1609.34 #convert to feet/miles
         
-    weather["sunrise"] = datetime.fromtimestamp(weather["sunrise"]).strftime('%I:%M %p')
-    weather["sunset"] = datetime.fromtimestamp(weather["sunset"]).strftime('%I:%M %p')
-    weather["pressure"] = str(weather["pressure"]) + ' hPa (millibars)'
-    weather["humidity"] = str(weather["humidity"]) + '%'
-    weather["dew_point"] = str(round(weather["dew_point"], 1)) + u"\N{DEGREE SIGN}" + 'F'
-    weather["clouds"] = str(weather["clouds"]) + '%'
-    weather["wind_speed"] = str(round(weather["wind_speed"], 1)) +  ' mph'
     weather["wind_deg"] = str(degrees_to_cardinal(weather["wind_deg"]))
-
-    # adding summary values in weather["weather"][0] to main weather dict
-    summary = weather["weather"][0]
-    weather["main"] = summary["main"]
-    weather["description"] = summary["description"]
-    weather["id"] = summary["id"]
-    weather["icon"] = summary["icon"]
-    
-    # and removing weather["weather"] from the dict
-    weather.pop("weather", None)
 
     return weather
 
@@ -93,7 +58,6 @@ def get_weather(lat, lon, exclude):
 
     formatted_current = {}
     formatted_daily = {}
-    formatted_alerts = {}
      
     try:   
         current_weather = python_response["current"]
@@ -109,16 +73,12 @@ def get_weather(lat, lon, exclude):
             formatted_daily.append(formatted_day)
     except:
         pass
-        
-    pprint.pprint(formatted_daily)
 
     return formatted_current, formatted_daily
 
 def main():
     lat, lon, exclude = command_line_input()
     formatted_current, formatted_daily = get_weather(lat, lon, exclude)
-
-    pprint.pprint(formatted_current)
 
     return(formatted_current, formatted_daily)
 
