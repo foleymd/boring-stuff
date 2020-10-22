@@ -9,8 +9,12 @@ import json
 import requests
 import sys
 import pprint
+import pytz
 from datetime import datetime
+from geopy import Nominatim
+from timezonefinder import TimezoneFinder
 from secret import open_weather_appid
+
 
 
 def command_line_input():
@@ -42,13 +46,13 @@ def format_temp(temp):
 
 
 # formats current weather data
-def format_weather_data(weather):
+def format_weather_data(weather, location, tz):
 
-    header = 'Austin Weather'
+    header = 'Current Weather'
     
     # converting to month/day/year & 12-hr time
     date = str(datetime.fromtimestamp(
-        weather["dt"]).strftime('%m/%d/%Y %I:%M %p'))
+        weather["dt"], tz).strftime('%m/%d/%Y %I:%M %p'))
     
     # rounds and adds degree symbol + Fahrenheit
     temp = format_temp(weather["temp"])
@@ -58,8 +62,10 @@ def format_weather_data(weather):
     # convert feet to miles, round
     visibility = 'Visibility: ' + str(round(weather["visibility"] / 1609.34, 1)) + ' miles'
 
-    sunrise = datetime.fromtimestamp(weather["sunrise"]).strftime('%I:%M %p')
-    sunset = datetime.fromtimestamp(weather["sunset"]).strftime('%I:%M %p')
+    sunrise = datetime.fromtimestamp(weather["sunrise"], tz).strftime('%I:%M %p')
+    sunset = datetime.fromtimestamp(weather["sunset"], tz).strftime('%I:%M %p')
+
+    
     sun = str('Sunrise: ' + sunrise + '     ' + 'Sunset: ' + sunset)
     
     pressure = 'Pressure: ' + str(weather["pressure"]) + ' hPa (millibars)'
@@ -72,7 +78,8 @@ def format_weather_data(weather):
 
     description = weather["weather"][0]["description"].title()
     
-    ordered_current = [header,
+    formatted_weather = [header,
+                       location,
                        date,
                        description,
                        temps,
@@ -84,7 +91,7 @@ def format_weather_data(weather):
                        visibility,
                       ]
 
-    return ordered_current
+    return formatted_weather
 
 
 # performs request.get for weather data and returns a dict with formatted data
@@ -104,8 +111,15 @@ def get_weather(lat, lon, exclude):
 
 def display_weather(weather):
 
-    vertical_separator = '-' * 42
-    string_width = 40
+    display_width = 0
+    
+    for item in weather:
+        if len(item) > display_width:
+            display_width = len(item)
+
+    string_width = display_width + 4
+    separator_width = string_width + 2
+    vertical_separator = '-' * separator_width
 
     for item in weather:
         print(vertical_separator)
@@ -113,18 +127,36 @@ def display_weather(weather):
 
     print(vertical_separator)
 
+
+def get_display_location(lat, lon):
+
+    input_location = str(lat + ', ' + lon)
+
+    geolocator = Nominatim(user_agent="foleymd@gmail.com")
+    location = geolocator.reverse(input_location)
+    address = location.raw['address']
+    display_location = ", ".join([address.get('city', ''), address.get('state', ''), address.get('country', '')])
+
+    tf = TimezoneFinder()
+    latitude, longitude = float(lat), float(lon)
+    tz = pytz.timezone(tf.timezone_at(lng=longitude, lat=latitude))
+
+    return display_location, tz
+
             
 def main():
     
     lat, lon, exclude = command_line_input()
+    
     current_weather_data = get_weather(lat, lon, exclude)
 
+    display_location, tz = get_display_location(lat, lon)
+
     try:
-        formatted_current = format_weather_data(current_weather_data)
+        formatted_current = format_weather_data(current_weather_data, display_location, tz)
         display_weather(formatted_current)
-    
     except:
-        print('Skipping current weather.')
+        print('Internal error: Skipping current weather.')
         pass
 
 
