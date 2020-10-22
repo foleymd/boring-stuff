@@ -45,48 +45,66 @@ def format_temp(temp):
 def format_weather_data(weather, timeframe):
 
     # formatting strings for human readability
+    
     if timeframe == "current":
-        weather["dt"] = datetime.fromtimestamp(
-            weather["dt"]).strftime('%m/%d/%Y %I:%M %p')
-        weather["temp"] = format_temp(weather["temp"])
-        weather["feels_like"] = format_temp(weather["feels_like"])
-        visibility_miles = weather["visibility"] / \
-            1609.34  # convert to feet/miles
-        weather["visibility"] = str(round(visibility_miles, 1)) + ' miles'
+        ## call to function format current data
+
+        header = 'Austin Weather'
+        
+        # converting to month/day/year & 12-hr time
+        date = str(datetime.fromtimestamp(
+            weather["dt"]).strftime('%m/%d/%Y %I:%M %p'))
+        
+        # rounds and adds degree symbol + Fahrenheit
+        temp = format_temp(weather["temp"])
+        feels_like = format_temp(weather["feels_like"])
+        temps = str('Temp: ' + temp + '    ' + 'Feels Like: ' + feels_like)
+
+        # convert feet to miles, round
+        visibility = str(round(weather["visibility"] / 1609.34, 1)) + ' miles'
 
     elif timeframe == "day":
-        weather["dt"] = datetime.fromtimestamp(
+        ## call to function format daily data
+        date = datetime.fromtimestamp(
             weather["dt"]).strftime('%m/%d/%Y')
         for time, temp in weather["temp"].items():
-            weather["temp"][time] = format_temp(weather["temp"][time])
+            formatted_weather["temp"][time] = format_temp(weather["temp"][time])
+
         for time, temp in weather["feels_like"].items():
-            weather["feels_like"][time] = format_temp(
+            formatted_weather["feels_like"][time] = format_temp(
                 weather["feels_like"][time])
-        weather["pop"] = str("{:.0%}".format(weather["pop"]))
 
-    weather["sunrise"] = datetime.fromtimestamp(
-        weather["sunrise"]).strftime('%I:%M %p')
-    weather["sunset"] = datetime.fromtimestamp(
-        weather["sunset"]).strftime('%I:%M %p')
-    weather["pressure"] = str(weather["pressure"]) + ' hPa (millibars)'
-    weather["humidity"] = str(weather["humidity"]) + '%'
-    weather["dew_point"] = str(
-        round(weather["dew_point"], 1)) + u"\N{DEGREE SIGN}" + 'F'
-    weather["clouds"] = str(weather["clouds"]) + '%'
-    weather["wind_speed"] = str(round(weather["wind_speed"], 1)) + ' mph'
-    weather["wind_deg"] = str(degrees_to_cardinal(weather["wind_deg"]))
+        formatted_weather["precipitation"] = str("{:.0%}".format(weather["pop"]))
+        
 
-    # adding summary values in weather["weather"][0] to main weather dict
-    summary = weather["weather"][0]
-    weather["main"] = summary["main"]
-    weather["description"] = summary["description"]
-    weather["id"] = summary["id"]
-    weather["icon"] = summary["icon"]
+    sunrise = datetime.fromtimestamp(weather["sunrise"]).strftime('%I:%M %p')
+    sunset = datetime.fromtimestamp(weather["sunset"]).strftime('%I:%M %p')
+    sun = str('Sunrise: ' + sunrise + '     ' + 'Sunset: ' + sunset)
+    
+    pressure = 'Pressure: ' + str( weather["pressure"]) + ' hPa (millibars)'
+    humidity = 'Humidity: ' + str(weather["humidity"]) + '%'
+    dew_point = 'Dew point: ' + format_temp(weather["dew_point"])
 
-    # and removing weather["weather"] from the dict
-    weather.pop("weather", None)
+    wind_speed = str(round(weather["wind_speed"], 1)) + ' mph'
+    wind_deg = str(degrees_to_cardinal(weather["wind_deg"]))
+    wind = str('Winds: ' + wind_deg + ' ' + wind_speed)
 
-    return weather
+    description = weather["weather"][0]["description"].title()
+
+    ordered_weather = [header,
+                       date,
+                       description,
+                       temps,
+                       sun,
+                       wind,
+                       pressure,
+                       humidity,
+                       dew_point,
+                      ]
+
+
+## conacatenate daily and current weather here
+    return ordered_weather
 
 
 # performs request.get for weather data and returns a dict with formatted data
@@ -105,30 +123,42 @@ def get_weather(lat, lon, exclude):
     formatted_daily = {}
 
     try:
-        current_weather = python_response["current"]
-        formatted_current = format_weather_data(current_weather, "current")
+        formatted_current = format_weather_data(python_response["current"], "current")
     except:
+        print('Skipping current weather')
         pass
 
-    try:
-        daily_weather = python_response["daily"]
-        formatted_daily = []
-        for day in daily_weather:
-            formatted_day = format_weather_data(day, 'day')
-            formatted_daily.append(formatted_day)
-    except:
-        pass
+##    try:
+##        daily_weather = python_response["daily"]
+##       ## formatted_daily = []
+##        for day in daily_weather:
+##            formatted_day = format_weather_data(day, 'day')
+##            formatted_daily.append(formatted_day)
+##    except:
+##        pass
 
-    pprint.pprint(formatted_daily)
-
+  
     return formatted_current, formatted_daily
+##, formatted_daily
 
+def display_weather(weather):
 
+    vertical_separator = '-' * 42
+    string_width = 40
+
+    for item in weather:
+        print(vertical_separator)
+        print('|' + str(item).center(string_width, ' ') + '|')
+
+    print(vertical_separator)
+
+            
 def main():
+    
     lat, lon, exclude = command_line_input()
     formatted_current, formatted_daily = get_weather(lat, lon, exclude)
 
-    pprint.pprint(formatted_current)
+    display_weather(formatted_current)
 
     return(formatted_current, formatted_daily)
 
