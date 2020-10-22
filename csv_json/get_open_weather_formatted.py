@@ -41,47 +41,28 @@ def format_temp(temp):
     return temp
 
 
-# formats both daily and current weather data
-def format_weather_data(weather, timeframe):
+# formats current weather data
+def format_weather_data(weather):
 
-    # formatting strings for human readability
+    header = 'Austin Weather'
     
-    if timeframe == "current":
-        ## call to function format current data
+    # converting to month/day/year & 12-hr time
+    date = str(datetime.fromtimestamp(
+        weather["dt"]).strftime('%m/%d/%Y %I:%M %p'))
+    
+    # rounds and adds degree symbol + Fahrenheit
+    temp = format_temp(weather["temp"])
+    feels_like = format_temp(weather["feels_like"])
+    temps = str('Temp: ' + temp + '    ' + 'Feels Like: ' + feels_like)
 
-        header = 'Austin Weather'
-        
-        # converting to month/day/year & 12-hr time
-        date = str(datetime.fromtimestamp(
-            weather["dt"]).strftime('%m/%d/%Y %I:%M %p'))
-        
-        # rounds and adds degree symbol + Fahrenheit
-        temp = format_temp(weather["temp"])
-        feels_like = format_temp(weather["feels_like"])
-        temps = str('Temp: ' + temp + '    ' + 'Feels Like: ' + feels_like)
-
-        # convert feet to miles, round
-        visibility = str(round(weather["visibility"] / 1609.34, 1)) + ' miles'
-
-    elif timeframe == "day":
-        ## call to function format daily data
-        date = datetime.fromtimestamp(
-            weather["dt"]).strftime('%m/%d/%Y')
-        for time, temp in weather["temp"].items():
-            formatted_weather["temp"][time] = format_temp(weather["temp"][time])
-
-        for time, temp in weather["feels_like"].items():
-            formatted_weather["feels_like"][time] = format_temp(
-                weather["feels_like"][time])
-
-        formatted_weather["precipitation"] = str("{:.0%}".format(weather["pop"]))
-        
+    # convert feet to miles, round
+    visibility = 'Visibility: ' + str(round(weather["visibility"] / 1609.34, 1)) + ' miles'
 
     sunrise = datetime.fromtimestamp(weather["sunrise"]).strftime('%I:%M %p')
     sunset = datetime.fromtimestamp(weather["sunset"]).strftime('%I:%M %p')
     sun = str('Sunrise: ' + sunrise + '     ' + 'Sunset: ' + sunset)
     
-    pressure = 'Pressure: ' + str( weather["pressure"]) + ' hPa (millibars)'
+    pressure = 'Pressure: ' + str(weather["pressure"]) + ' hPa (millibars)'
     humidity = 'Humidity: ' + str(weather["humidity"]) + '%'
     dew_point = 'Dew point: ' + format_temp(weather["dew_point"])
 
@@ -90,8 +71,8 @@ def format_weather_data(weather, timeframe):
     wind = str('Winds: ' + wind_deg + ' ' + wind_speed)
 
     description = weather["weather"][0]["description"].title()
-
-    ordered_weather = [header,
+    
+    ordered_current = [header,
                        date,
                        description,
                        temps,
@@ -100,11 +81,10 @@ def format_weather_data(weather, timeframe):
                        pressure,
                        humidity,
                        dew_point,
+                       visibility,
                       ]
 
-
-## conacatenate daily and current weather here
-    return ordered_weather
+    return ordered_current
 
 
 # performs request.get for weather data and returns a dict with formatted data
@@ -117,29 +97,10 @@ def get_weather(lat, lon, exclude):
     response.raise_for_status()
 
     # formats json into python data structures
-    python_response = json.loads(response.text)
-
-    formatted_current = {}
-    formatted_daily = {}
-
-    try:
-        formatted_current = format_weather_data(python_response["current"], "current")
-    except:
-        print('Skipping current weather')
-        pass
-
-##    try:
-##        daily_weather = python_response["daily"]
-##       ## formatted_daily = []
-##        for day in daily_weather:
-##            formatted_day = format_weather_data(day, 'day')
-##            formatted_daily.append(formatted_day)
-##    except:
-##        pass
-
+    current_weather_data = json.loads(response.text)["current"]
   
-    return formatted_current, formatted_daily
-##, formatted_daily
+    return current_weather_data
+
 
 def display_weather(weather):
 
@@ -156,11 +117,15 @@ def display_weather(weather):
 def main():
     
     lat, lon, exclude = command_line_input()
-    formatted_current, formatted_daily = get_weather(lat, lon, exclude)
+    current_weather_data = get_weather(lat, lon, exclude)
 
-    display_weather(formatted_current)
-
-    return(formatted_current, formatted_daily)
+    try:
+        formatted_current = format_weather_data(current_weather_data)
+        display_weather(formatted_current)
+    
+    except:
+        print('Skipping current weather.')
+        pass
 
 
 main()
